@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Classification</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Waste Classification</h1>
+        <p class="text-center">Upload an image to classify as Organic or Recyclable</p>
+        
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Choose Image:</label>
+                <input type="file" class="form-control-file" id="file" name="file" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Classify</button>
+        </form>
+    </div>
+</body>
+</html>
